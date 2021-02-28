@@ -7,5 +7,6 @@
     <color name="light_blue">#66C5FF</color>
     <color name="medium_blue">#1580FD</color>
     <color name="white">#FFFFFF</color>
+    <color name="opacity_white">#B8FFFFFF</color>
 
 </resources>

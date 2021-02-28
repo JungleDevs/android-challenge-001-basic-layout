@@ -16,6 +16,15 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">14sp</item>
     </style>
+
+    <style name="textWeatherType">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/averta</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
     <style name="text24sp">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/averta</item>
