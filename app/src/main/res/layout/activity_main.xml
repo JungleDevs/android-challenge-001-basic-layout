@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_min_temperature"
+        style="@style/text14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="16dp"
+        android:text="24º"
+        app:layout_constraintBottom_toTopOf="@+id/wind_icon"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/current_temperature"
+        app:layout_constraintVertical_bias="0.050000012"
+        app:lineHeight="19.2sp" />
+
+    <TextView
+        android:id="@+id/text_min_temperature3"
+        style="@style/text14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="18º"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_min_temperature"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:lineHeight="19.2sp" />
+
+    <TextView
+        android:id="@+id/text_wind_speed"
+        style="@style/text16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 km/h"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/current_temperature"
+        app:layout_constraintStart_toStartOf="@+id/current_temperature"
+        app:layout_constraintTop_toBottomOf="@+id/current_temperature"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <TextView
+        android:id="@+id/text_preciptation"
+        style="@style/text16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="20 mm"
+        app:layout_constraintBottom_toBottomOf="@+id/text_wind_speed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical" />
+
+    <ImageView
+        android:id="@+id/logo_small"
+        android:layout_width="78dp"
+        android:layout_height="13.27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/app_name"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/weather_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_small" />
+
+    <Button
+        android:id="@+id/button_tomorrow"
+        android:layout_width="74dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_selected"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:strokeColor="#00FFFFFF"
+        android:text="@string/label_today"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/weather_type"
+        app:layout_constraintEnd_toStartOf="@+id/button_today2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_small"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <Button
+        android:id="@+id/button_today2"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_unselected"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:strokeColor="#00FFFFFF"
+        android:text="@string/label_tomorrow"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_tomorrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical" />
+
+    <ImageView
+        android:id="@+id/weather_type"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/sunny"
+        android:foregroundGravity="fill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37"
+        app:srcCompat="@drawable/image_sunny" />
+
+    <TextView
+        android:id="@+id/weather_status"
+        style="@style/text14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sunny"
+        app:layout_constraintBottom_toTopOf="@+id/current_temperature"
+        app:layout_constraintEnd_toEndOf="@+id/current_temperature"
+        app:layout_constraintStart_toStartOf="@+id/current_temperature"
+        app:layout_constraintTop_toBottomOf="@+id/weather_type"
+        app:layout_constraintVertical_bias="0.20" />
+
+    <TextView
+        android:id="@+id/current_temperature"
+        style="@style/text64sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_22"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_type"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <TextView
+        android:id="@+id/temperature_scale"
+        style="@style/text24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/celsius"
+        app:layout_constraintStart_toEndOf="@+id/current_temperature"
+        app:layout_constraintTop_toTopOf="@+id/current_temperature" />
+
+    <ImageView
+        android:id="@+id/wind_icon"
+        android:layout_width="17dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/wind_icon"
+        app:layout_constraintBottom_toTopOf="@+id/text_wind_speed"
+        app:layout_constraintEnd_toEndOf="@+id/text_wind_speed"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/text_wind_speed"
+        app:srcCompat="@drawable/wind_speed" />
+
+    <ImageView
+        android:id="@+id/precipitation_icon"
+        android:layout_width="16dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="3dp"
+        android:contentDescription="@string/precipitation_icon"
+        app:layout_constraintBottom_toTopOf="@+id/text_preciptation"
+        app:layout_constraintEnd_toEndOf="@+id/text_preciptation"
+        app:layout_constraintStart_toStartOf="@+id/text_preciptation"
+        app:srcCompat="@drawable/rain" />
+
+    <ImageView
+        android:id="@+id/humidity_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginBottom="3dp"
+        android:contentDescription="@string/humidity_icon"
+        app:layout_constraintBottom_toTopOf="@+id/text_humidity"
+        app:layout_constraintEnd_toEndOf="@+id/text_humidity"
+        app:layout_constraintStart_toStartOf="@+id/text_humidity"
+        app:srcCompat="@drawable/humidity_icon" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.464" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="weather_type"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <TextView
+        android:id="@+id/text_humidity"
+        style="@style/text16sp"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="50%"
+        app:layout_constraintBottom_toBottomOf="@+id/text_wind_speed"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lineHeight="19.2sp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_min_temperature"
+        app:layout_constraintEnd_toStartOf="@+id/text_min_temperature"
+        app:layout_constraintTop_toTopOf="@+id/text_min_temperature"
+        app:srcCompat="@drawable/max" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:srcCompat="@drawable/min" />
+
+</android.support.constraint.ConstraintLayout>

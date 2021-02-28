@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="label_today">Today</string>
+    <string name="label_tomorrow">Tomorrow</string>
+    <string name="sunny">Sunny</string>
+    <string name="partly_cloudly">Partly Cloudy</string>
+    <string name="precipitation_icon">Precipitation Icon</string>
+    <string name="humidity_icon">Humidity Icon</string>
+    <string name="wind_icon">Wind Speed Icon</string>
+    <string name="celsius">ºC</string>
+    <string name="_22">22</string>
+</resources>
