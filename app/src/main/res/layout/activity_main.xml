@@ -17,12 +17,12 @@
         android:layout_marginTop="1dp"
         android:layout_marginBottom="16dp"
         android:contentDescription="@string/maximum"
-        android:text="24º"
         app:layout_constraintBottom_toTopOf="@+id/wind_icon"
         app:layout_constraintStart_toEndOf="@+id/max_icon"
         app:layout_constraintTop_toBottomOf="@+id/text_current_temperature"
         app:layout_constraintVertical_bias="0.050000012"
-        app:lineHeight="19.2sp" />
+        app:lineHeight="19.2sp"
+        tools:text="24º" />
 
     <TextView
         android:id="@+id/text_min_temperature"
@@ -31,10 +31,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
         android:contentDescription="@string/minimum"
-        android:text="18º"
         app:layout_constraintBaseline_toBaselineOf="@+id/text_max_temperature"
         app:layout_constraintStart_toEndOf="@+id/minc_icon"
-        app:lineHeight="19.2sp" />
+        app:lineHeight="19.2sp"
+        tools:text="18º" />
 
     <TextView
         android:id="@+id/text_wind_speed"
@@ -47,7 +47,8 @@
         app:layout_constraintEnd_toEndOf="@+id/img_weather_type"
         app:layout_constraintStart_toStartOf="@+id/img_weather_type"
         app:layout_constraintTop_toBottomOf="@+id/text_min_temperature"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintVertical_bias="0.75"
+        tools:text="10 km/h" />
 
     <TextView
         android:id="@+id/text_preciptation"
@@ -57,10 +58,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:contentDescription="@string/precipitation"
-        android:text="@string/mm"
         app:layout_constraintBaseline_toBaselineOf="@+id/text_wind_speed"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline_vertical" />
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
+        tools:text="50 mm" />
 
     <ImageView
         android:id="@+id/logo_small"
@@ -82,39 +83,51 @@
     <ToggleButton
         android:id="@+id/button_today"
         style="@style/text14sp"
-        android:layout_width="74dp"
+        android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_marginEnd="14dp"
         android:background="@drawable/toggle_button"
         android:checked="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
         android:rotation="0"
         android:rotationX="0"
         android:rotationY="0"
+        android:textAlignment="center"
         android:textAllCaps="false"
+        android:textAppearance="@style/text14sp"
         android:textOff="@string/today"
         android:textOn="@string/today"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/img_weather_type"
         app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
         app:layout_constraintTop_toBottomOf="@+id/logo_small"
-        app:layout_constraintVertical_bias="0.49" />
+        app:layout_constraintVertical_bias="0.49"
+        tools:text="@string/today" />
 
     <ToggleButton
         android:id="@+id/button_tomorrow"
-        style="@style/text14sp"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_marginStart="8dp"
         android:background="@drawable/toggle_button"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
         android:rotation="0"
         android:rotationX="0"
         android:rotationY="0"
-        android:text="@string/tomorrow"
+        android:textAlignment="center"
         android:textAllCaps="false"
+        android:textAppearance="@style/text14sp"
         android:textOff="@string/tomorrow"
         android:textOn="@string/tomorrow"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_today"
-        app:layout_constraintStart_toEndOf="@+id/button_today" />
+        app:layout_constraintStart_toEndOf="@+id/button_today"
+        tools:text="@string/tomorrow" />
 
     <ImageView
         android:id="@+id/img_weather_type"
@@ -226,11 +239,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:contentDescription="@string/humidity"
-        android:text="@string/percent"
         app:layout_constraintBaseline_toBaselineOf="@+id/text_wind_speed"
         app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:lineHeight="19.2sp" />
+        app:lineHeight="19.2sp"
+        tools:text="50%" />
 
     <ImageView
         android:id="@+id/max_icon"
