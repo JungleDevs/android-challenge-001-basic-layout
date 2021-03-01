@@ -1,17 +1,35 @@
 <resources>
     <string name="app_name">Weather</string>
+
     <string name="today">Today</string>
     <string name="tomorrow">Tomorrow</string>
+
+
     <string name="icon_max">Up Arrow</string>
     <string name="icon_min">Down Arrow</string>
-    <string name="sunny">Sunny</string>
-    <string name="partly_cloudly">Partly Cloudy</string>
+
+
     <string name="precipitation">Precipitation</string>
     <string name="humidity">Humidity</string>
     <string name="wind">Wind Speed</string>
-    <string name="celsius">ºC</string>
     <string name="ccurrent_temperature">Current Temperature</string>
-    <string name="maximum">Maximun</string>
-    <string name="minimum">Minimun</string>
+    <string name="maximum">Max Temperature</string>
+    <string name="minimum">Min Temperature</string>
+
+    <string name="celsius">ºC</string>
+    <string name="percent">%</string>
+    <string name="kmh">\u00A0km/h</string>
+    <string name="mm">\u00A0mm</string>
+    <string name="degree">º</string>
+
     <string name="_22">22</string>
+
+    <string name="sunny">Sunny</string>
+    <string name="cloudly">Cloudy</string>
+    <string name="partly_cloudly">Partly Cloudy</string>
+    <string name="mostly_cloudly">Mostly Cloudy</string>
+    <string name="rain">Rain</string>
+    <string name="showers">Showers</string>
+    <string name="thunderStorm">Thunderstorm</string>
+
 </resources>
