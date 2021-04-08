@@ -4,10 +4,8 @@
     <string name="today">Today</string>
     <string name="tomorrow">Tomorrow</string>
 
-
     <string name="icon_max">Up Arrow</string>
     <string name="icon_min">Down Arrow</string>
-
 
     <string name="precipitation">Precipitation</string>
     <string name="humidity">Humidity</string>
@@ -18,6 +16,8 @@
 
     <string name="celsius">ºC</string>
     <string name="percent">%</string>
+    <string name="name">Name: %s, Surname: %s</string>
+    <string name="n_percent">%d %%</string> // to escape % you have to double it
     <string name="kmh">\u00A0km/h</string>
     <string name="mm">\u00A0mm</string>
     <string name="degree">º</string>
